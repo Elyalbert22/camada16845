@@ -2,22 +2,28 @@ let corteDeCarne = prompt("¿Que corte de carne desea?: \nNalga \nPicada \nLomo 
 let minusculaCarne = corteDeCarne.toLowerCase();
 let gramos = parseInt(prompt("Ingrese el peso deseado en Gramos."));
 
-const carne = {
-    corte1: { nombre: "Nalga", precio: 650 },
-    corte2: { nombre: "Picada", precio: 760 },
-    corte3: { nombre: "Lomo", precio: 460 }
+class Carnes {
+    constructor(nombre, precio) {
+        this.nombre = nombre,
+        this.precio = precio
+    }
 }
+
+const corte1 = new Carnes("Nalga", 650);
+const corte2 = new Carnes("Picada", 760);
+const corte3 = new Carnes("Lomo", 460);
+
 
 // do {
 switch (corteDeCarne) {
     case "nalga":
-        console.log(precioPorKilo(gramos, carne.corte1.precio));
+        console.log(precioPorKilo(gramos, corte1.precio));
         break;
     case "picada":
-        console.log(precioPorKilo(gramos, carne.corte2.precio));
+        console.log(precioPorKilo(gramos, corte2.precio));
         break;
     case "lomo":
-        console.log(precioPorKilo(gramos, carne.corte3.precio));
+        console.log(precioPorKilo(gramos, corte3.precio));
         break;
     case "nalga y picada":
         console.log(calcularDosCortes());
