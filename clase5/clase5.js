@@ -14,7 +14,6 @@ const corte2 = new Carnes("Picada", 760);
 const corte3 = new Carnes("Lomo", 460);
 
 
-// do {
 switch (corteDeCarne) {
     case "nalga":
         console.log(precioPorKilo(gramos, corte1.precio));
@@ -44,8 +43,6 @@ switch (corteDeCarne) {
         alert("Ingrese nuevamente.");
         break;
 }
-// } while (corteDeCarne == "");
-
 
 
 function precioPorKilo(gramos, precio) {
