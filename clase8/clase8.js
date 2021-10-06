@@ -38,8 +38,8 @@ const mostrarProductos = (array) =>{
         div.innerHTML = `
                     <img src=${card.img} class="card-img-top" alt="bife angosto">
                     <div class="card-body">
-                        <h5 class="card-title">${card.nombre}</h5>
-                        <h3>Precio: $${card.precio}.-
+                        <h4 class="card-title">${card.nombre}</h4>
+                        <h5>Precio por kilo: $${card.precio}.-</h5>
                         <botton onclick="agregarAlCarrito(${card.id})" class="btn btn-primary">Comprar</botton>
                     </div>`
         cortesSinHueso.appendChild(div);
@@ -68,8 +68,8 @@ const agregarAlCarrito = function carri(itemId) {
     console.log(producto);
 }
 
-let produc = document.getElementById("agregarCarrito");
-produc.addEventListener("click", agregarAlCarrito);
+// let produc = document.getElementById("agregarCarrito");
+// produc.addEventListener("click", agregarAlCarrito);
 
 
 
