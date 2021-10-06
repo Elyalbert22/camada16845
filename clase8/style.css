@@ -38,6 +38,7 @@
     justify-content: center;
     align-items: center;
     background-color: #c924e361;
+    flex-wrap: wrap;
 }
 
 .card-body {
@@ -52,6 +53,7 @@
 }
 .card{
     margin: 20px;
+    width: 19rem;
 }
 .footer{
     font-family: 'Roboto Slab', serif;
